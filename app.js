@@ -19,7 +19,7 @@ app.get("/", function(req, res) {
     value = req.cookies.testCookie;
   }
 
-  res.write(`Hello World!... ${value ? `Cookie Value: ${value}` : ""}`);
+  res.write(`${value ? `Cookie Value: ${value}` : ""}`);
   res.end(); 
 });
 
